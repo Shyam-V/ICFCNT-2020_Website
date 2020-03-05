@@ -1,19 +1,18 @@
 *{
 	padding:0px;
 	margin:0px;
+	font-family: 'Roboto', sans-serif;
 }
-body{
-	background-color: black;	
-}
-.top{
-	background-color: #415E9A;
-	color:white;
+body
+{
+	color:#E4E4E4;
 }
 .commitee{
-	/*padding-left: 40%;*/
+	padding-left: 7%;
 	font-weight: bold;
 	font-size: 1.5em;
-	text-decoration:underline;
+	color:black;
+	/*text-decoration:underline;*/
 }
 .logo{
 	width: auto;
@@ -23,9 +22,9 @@ body{
 	margin-left: 3px;
 }
 .container{
-	background-color: #415E9A;
-	background-image: linear-gradient(315deg,#2D373B  0%,#415E9A 74%);
-	color: white;
+	/*background-color: #E4E4E4;*/
+	/*background-image: linear-gradient(315deg,#2D373B  0%,#415E9A 74%);*/
+	color: black;
 	margin-top:0px;
 }
 .conference{
@@ -43,6 +42,7 @@ body{
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
+
 }
 img{
 	height: 130px;
@@ -51,5 +51,5 @@ img{
 	margin-left:200px;
 }
 figcaption{
-	padding-left: 50%;
+	padding-left: 70%;
 }

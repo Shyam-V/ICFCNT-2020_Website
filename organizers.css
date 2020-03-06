@@ -1,0 +1,64 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-color: #3B5997;
+}
+.top{
+	background-color: #C4C4C4;
+	color:black;
+}
+.commitee{
+	padding-left: 7%;
+	font-weight: bold;
+	font-size: 1.5em;
+	/*text-decoration:underline;*/
+}
+.logo{
+	width: auto;
+	height: auto;
+	padding-left: 0px;
+	border-radius:34px;
+	margin-left: 3px;
+}
+.container{
+	background-color: #E4E4E4;
+	color: black;
+	margin-top:0px;
+}
+.conference{
+	padding-left: 1%;
+	font-size: 31px;
+}
+.date{
+	padding-left: 68%;
+	font-size:20px;
+}
+.col-sm-6{
+	text-align:center;
+}
+.endorsement{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#important_dates{
+	font-size: 135%;
+	margin-top:10px; 
+}
+
+@media only screen and (max-width: 756px){
+	#important_dates{
+		font-size: 120%;
+	}
+}
+img{
+	height: 130px;
+	width:130px;
+	border-radius:100%;
+	margin-left:200px;
+}
+figcaption{
+	padding-left: 80%;
+}

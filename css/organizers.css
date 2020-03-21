@@ -10,10 +10,15 @@ body{
 	color:black;
 }
 .commitee{
-	/*padding-left: 40%;*/
+	text-align: center;
+	color: #3B5997;
+	margin: 0% 40%;
+	width: 20%; 
+	border: 2px solid darkgrey;
+	border-radius: 25px;
 	font-weight: bold;
 	font-size: 1.5em;
-	text-decoration:underline;
+	font-family: 'Baloo Chettan 2';
 }
 .logo{
 	width: auto;
@@ -60,5 +65,7 @@ img{
 	margin-left:0px;
 }
 figcaption{
-	padding-left: 0%;
+	padding-top: 2%;
+	font-size: 120%;
+	font-family: 'Montserrat', sans-serif;
 }

@@ -3,3 +3,7 @@ sup
 vertical-align: middle;
 font-size:75%;
 }
+.round{
+	border-radius: 25px;
+	border: 2px solid darkgrey;
+}

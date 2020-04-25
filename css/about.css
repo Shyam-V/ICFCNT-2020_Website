@@ -74,11 +74,24 @@ body{
 	margin-top:10px; 
 }
 
-@media only screen and (max-width: 756px){
-	#important_dates{
-		font-size: 120%;
+@media only screen and (max-width: 1000px){
+	.view-control{
+		width: 300px;
+	}
+	.height-control{
+		height: 79.9%;
+	}
+
+}
+@media only screen and (min-width: 1000px){
+	.view-control{
+		width: 340px;
+	}
+	.height-control{
+		height: 80%;
 	}
 }
+
 a{
 	color: black;
 	background-color: transparent;

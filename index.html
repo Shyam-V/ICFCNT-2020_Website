@@ -10,29 +10,38 @@
       <link href="https://fonts.googleapis.com/css?family=Lato|Nunito|Open+Sans|PT+Sans|Roboto:100,400&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="./css/about.css">
       <link rel="stylesheet" type="text/css" href="./css/blinking.css">
-  <link rel="stylesheet" type="text/css" href="./css/all.css">
+      <link rel="stylesheet" type="text/css" href="./css/all.css">
+      <link rel="stylesheet" type="text/css" href="./css/button_animation.css">
+      <link rel="stylesheet" type="text/css" href="./css/popup.css">
     </head>
 <body>
   <nav class="navbar navbar-default">
       <div class="top" style="font-family: 'PT Sans', sans-serif;">
           <div class="container-fluid">
-              <div class="navbar-header" style="padding-top: 10px">
+            <div class="row">
+              <div class="navbar-header col-sm-2" style="padding-top: 10px">
                 <img src="images\logo.png" class="logo">
               </div>
-              <div class="">
+              <div class="col-sm-10">
                 <br>
-                <ul class="nav navbar-nav navbar-left" style="margin-left: 100px;">
+                <ul class="nav navbar-nav navbar-left" style="margin-left: 50px;">
                 <b><li><span style="font-size: 30px;">International Conference on Futuristic Communication and Network Technologies</span></li> 
-        <span class="date">6<sup>th</sup>-7<sup>th</sup> November, 2020</span></b>
-                <div class="nav navbar-nav navbar-left BalooThambi2" style="font-size: 18px; padding-left: 50px;">
+                     <span class="date">6<sup>th</sup>-7<sup>th</sup> November, 2020</span></b></ul>
+              </div>
+            </div>
+            <div class="row">
+            <ul class="nav navbar-nav" style="margin-left: 30px;">
+                <div class="nav navbar-nav BalooThambi2" style="font-size: 18px; padding-left: 0px;">
                   <li class="active"><a class="round" href="index.html">Home</a></li>
                   <li>&ensp;</li>
                     <li><a class="round" href="about.html">About VIT</a></li>
                     <li>&ensp;</li>
                     <li><a class="round" href="advisoryboard.html">Advisory Board</a></li>
+                    <li>&ensp;</li>
+                    <li><a class="round" href="speakers.html">Conference Speakers</a></li>
                     <li>&ensp;</li>
                     <li><a class="round" href="papers.html">Call For Papers</a></li>
                     <li>&ensp;</li>
@@ -47,7 +56,7 @@
               </ul>
               </div>
           </div>
-      </div>
+        </div>
   </nav>
   <!-- <div class="main" style="font-family: Segoe UI; font-size: 17px;">
       <nav class="navbar navbar-inverse">
@@ -63,22 +72,61 @@
       </nav>
   </div> -->
 <div class="container-fluid" id="abot">
-  <div class="row">
-    <div class="col-sm-3 BalooThambi2" style="padding-right: 5px; padding-left: 5px;">
+  <div class="row height-control">
+    <div class="col-sm-3 BalooThambi2 view-control" style="padding-right: 5px; padding-left: 5px;">
       <br>
       <img src ="icons\512x512.png" style="width:35px; height:35px; margin-left:50px"/><text id="important_dates" class="blinking"> Important Dates</text><br>
       <embed src="Component 3  1.svg" width="300" height="400" style="margin-top: 5px" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"/>
     </div>
-    <br>
-    <br>
-    <div class="col-sm-8" style="padding-left:0%; padding-right: 2%; padding-bottom: 20px">
+    <div class="col-sm-8" style="padding-left:0%; padding-right: 0%; padding-bottom: 20px">
+
+      <div class="col-sm-12" style="height: 150px; padding: 10px 50px; border: 2px solid darkgrey; border-radius: 25px;">
+
+        <div class="col-sm-12">
+            <center><text id="myBtn" class="btn from-top" style="font-family: 'Montserrat',sans-serif; font-size: 20px;"><b>&nbsp;&nbsp;Spotlight&nbsp;&nbsp;</b></text></center>
+          <!-- <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+            <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+              <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+           </defs>
+          </svg> -->
+        </div><br><br>
+          
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-body">
+                <span class="close">×</span>
+                <center><h3><text><u>Announcements</u></text><h3></center>
+                <ul class="BalooThambi2" style="list-style: solid circle outside black; font-size: 17px; color: #800000;">
+              <li><img src="icons/new.gif" oncontextmenu="return false;" ondrag="return false;" onmousedown="return false;">Paper submission has commenced. <a href="papersubmission.html">Click here</a> here to submit your research article now!</li>
+              <li>Paper presentation can also be opted via virtual online mode for participants across globe.</li>
+              <li>We are closely monitoring the CoViD-19 pandemic situation and conference updates will be put up in site regularly for author(s) and participants.</li>
+              <li>Coming soon! Invited Speakers and Keynote Speakers details!</li>
+              <li>Coming soon! Scopus Indexed Publication details!</li>
+            </ul>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-12" style="overflow:auto; max-height: 70%;">
+            <ul class="BalooThambi2" style="list-style: solid circle outside black; font-size: 17px; color: #a60707;">
+              <li><img src="icons/new.gif" oncontextmenu="return false;" ondrag="return false;" onmousedown="return false;">Paper submission has commenced. <a href="papersubmission.html">Click here</a> to submit your research article now!</li>
+              <li>Paper presentation can also be opted via virtual online mode for participants across globe.</li>
+              <li>We are closely monitoring the CoViD-19 pandemic situation and conference updates will be put up in site regularly for author(s) and participants.</li>
+              <li>Coming soon! Invited Speakers and Keynote Speakers details!</li>
+              <li>Coming soon! Scopus Indexed Publication details!</li>
+            </ul>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br>
       <div class="col-sm-12" style="padding: 10px 20px;border: 2px solid darkgrey; border-radius: 25px;">
         <text style="font-size: 23px; color: #3A5793; font-family: 'Montserrat', sans-serif;"><b>ICFCNT - 2020</b></text><br><br>
       <text class="BalooThambi2" style="font-size: 17px;text-align:justify;"><text class="round"><b>&nbsp;&nbsp;About the Conference&nbsp;&nbsp;</b></text><br><br>
-<p> International Conference on Futuristic Communication and Network Technologies (ICFCNT) is scheduled on November 6th and 7th 2020 at VIT University, Chennai, Tamil Nadu, India. The School of Electronics Engineering at VIT University proudly organizes this conference which would provide a platform for the researchers in the field of Communication and Networks to disseminate their ideas and research findings. This would enrich the knowledge of the intellectuals who are part of this conference and would lead to further exploration and innovative research in the various domains of the conference. This conference would also help the budding engineers and experts working in the same areas of research to network.</p>
-<p> The world is centered on the various communication technologies and hence the main aim of this conference is to bring leading academic scientists, researchers and research scholars to exchange and share their experiences and research findings on all aspects in the emerging trends and technologies in the field of Optical Communication, Microwave engineering for future networks, Application of AI / ML in Networks, Internet of Things, Information Processing, Network Security and Blockchain technologies. The experts in these areas around the globe would be invited for delivering keynote talks and invited lectures. Research papers presented in this forum would be published in peer-reviewed journals. 
-
- </p>
+<p>International Conference on Futuristic Communication and Network Technologies (ICFCNT) is scheduled on November 6th and 7th 2020 at VIT University, Chennai, Tamil Nadu, India. The School of Electronics Engineering at VIT University proudly organizes this conference which would provide a platform for the researchers in the field of Communication and Networks to disseminate their ideas and research findings. This would enrich the knowledge of the intellectuals who are part of this conference and would lead to further exploration and innovative research in the various domains of the conference. This conference would also help the budding engineers and experts working in the same areas of research to network. </p>
+<p>The world is centered on the various communication technologies and hence the main aim of this conference is to bring leading academic scientists, researchers and research scholars to exchange and share their experiences and research findings on all aspects in the emerging trends and technologies in the field of Optical Communication, Microwave engineering for future networks, Application of AI / ML in Networks, Internet of Things, Information Processing, Network Security and Blockchain technologies. The experts in these areas around the globe would be invited for delivering keynote talks and invited lectures. Research papers presented in this forum would be published in peer-reviewed journals.  </p>
 
 
 
@@ -127,5 +175,33 @@
 
 </footer>
 <!-- Footer -->
+ <!--   End of Modal Content -->
+        <script>
+          // Get the modal
+          var modal = document.getElementById("myModal");
+
+          // Get the button that opens the modal
+          var btn = document.getElementById("myBtn");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks the button, open the modal 
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script>
 </body>
 </html>

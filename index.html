@@ -2,6 +2,7 @@
 <head>
   <title>ICFCNT-2020</title>
       <meta charset="utf-8">
+     <!--  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"> -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,6 +17,20 @@
       <link rel="stylesheet" type="text/css" href="./css/all.css">
       <link rel="stylesheet" type="text/css" href="./css/button_animation.css">
       <link rel="stylesheet" type="text/css" href="./css/popup.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script>
+  $( document ).ready(function() {
+    if (document.cookie.indexOf('visited=true') == -1){
+      // load the overlay
+      $('#myModal').show();
+    
+      var year = 1000*60*60*24*365;
+      var expires = new Date((new Date()).valueOf() + year);
+      document.cookie = "visited=true;expires=" + expires.toUTCString();
+    }
+  }); 
+</script> -->
     </head>
 <body>
   <nav class="navbar navbar-default">
@@ -26,32 +41,31 @@
                 <img src="images\logo.png" class="logo">
               </div>
               <div class="col-sm-10">
-                <br>
                 <ul class="nav navbar-nav navbar-left" style="margin-left: 50px;">
                 <b><li><span style="font-size: 30px;">International Conference on Futuristic Communication and Network Technologies</span></li> 
                      <span class="date">6<sup>th</sup>-7<sup>th</sup> November, 2020</span></b></ul>
               </div>
             </div>
             <div class="row">
-            <ul class="nav navbar-nav" style="margin-left: 30px;">
-                <div class="nav navbar-nav BalooThambi2" style="font-size: 18px; padding-left: 0px;">
-                  <li class="active"><a class="round" href="index.html">Home</a></li>
-                  <li>&ensp;</li>
-                    <li><a class="round" href="about.html">About VIT</a></li>
-                    <li>&ensp;</li>
-                    <li><a class="round" href="advisoryboard.html">Advisory Board</a></li>
-                    <li>&ensp;</li>
-                    <li><a class="round" href="speakers.html">Conference Speakers</a></li>
-                    <li>&ensp;</li>
-                    <li><a class="round" href="papers.html">Call For Papers</a></li>
-                    <li>&ensp;</li>
-                    <li><a class="round" href="papersubmission.html">Paper Submission</a></li>
-                    <li>&ensp;</li>
-                    <li><a class="round" href="organizers.html">Organizing Committee</a></li>
-                    <li>&ensp;</li>
-                    <li><a class="round" href="register.html">Registration</a></li>
-                    <li>&ensp;</li>
-                    <li><a class="round" href="contact.html">Contact Us</a></li>
+            <ul class="nav navbar-nav navbar-right" style="padding-right: 20px; padding-bottom: 5px;">
+                <div class="nav navbar-nav navbar-right BalooThambi2" style="font-size: 18px; padding-right: 20px;">
+                  <li><a class="round active button" style="margin-top: 10px; padding: 8px;" href="index.html">Home</a></li>
+                  <li>&nbsp;</li>
+                    <li><a class="round button" style="margin-top: 10px; padding: 8px;" href="about.html">About VIT</a></li>
+                    <li>&nbsp;</li>
+                    <li><a class="round button" style="margin-top: 10px; padding: 8px;" href="advisoryboard.html">Advisory Board</a></li>
+                    <li>&nbsp;</li>
+                    <li><a class="round button" style="margin-top: 10px; padding: 8px;" href="speakers.html">Conference Speakers</a></li>
+                    <li>&nbsp;</li>
+                    <li><a class="round button" style="margin-top: 10px; padding: 8px;" href="papers.html">Call For Papers</a></li>
+                    <li>&nbsp;</li>
+                    <li><a class="round button" style="margin-top: 10px; padding: 8px;" href="papersubmission.html">Paper Submission</a></li>
+                    <li>&nbsp;</li>
+                    <li><a class="round button" style="margin-top: 10px; padding: 8px;" href="organizers.html">Organizing Committee</a></li>
+                    <li>&nbsp;</li>
+                    <li><a class="round button" style="margin-top: 10px; padding: 8px;" href="register.html">Registration</a></li>
+                    <li>&nbsp;</li>
+                    <li><a class="round button" style="margin-top: 10px; padding: 8px;" href="contact.html">Contact Us</a></li>
                   </div>
               </ul>
               </div>
@@ -80,19 +94,20 @@
     </div>
     <div class="col-sm-8" style="padding-left:0%; padding-right: 0%; padding-bottom: 20px">
 
-      <div class="col-sm-12" style="height: 150px; padding: 10px 50px; border: 2px solid darkgrey; border-radius: 25px;">
-
-        <div class="col-sm-12">
+      <div class="col-sm-12" style="height: 120px; padding: 10px 50px; border: 2px solid darkgrey; border-radius: 25px;">
+        <br>
+        <img src="icons/full-screen-icon-png-29.png" width="20px" height="20px" id="myBtn" class="topright" style="cursor: pointer;" />
+        <!-- <div class="col-sm-12">
             <center><text id="myBtn" class="btn from-top" style="font-family: 'Montserrat',sans-serif; font-size: 20px;"><b>&nbsp;&nbsp;Spotlight&nbsp;&nbsp;</b></text></center>
-          <!-- <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
             <defs>
             <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
               <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
               <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
             </filter>
            </defs>
-          </svg> -->
-        </div><br><br>
+          </svg>
+        </div><br><br> -->
           
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -105,23 +120,25 @@
               <li><img src="icons/new.gif" oncontextmenu="return false;" ondrag="return false;" onmousedown="return false;">Paper submission has commenced. <a href="papersubmission.html">Click here</a> here to submit your research article now!</li>
               <li>Paper presentation can also be opted via virtual online mode for participants across globe.</li>
               <li>We are closely monitoring the CoViD-19 pandemic situation and conference updates will be put up in site regularly for author(s) and participants.</li>
-              <li>Coming soon! Invited Speakers and Keynote Speakers details!</li>
+              <li><a href="speakers.html">Check out</a> the Keynote and Invited Speakers details! More speakers coming soon for each track!</li>
               <li>Coming soon! Scopus Indexed Publication details!</li>
             </ul>
               </div>
             </div>
         </div>
-        <div class="col-sm-12" style="overflow:auto; max-height: 70%;">
+        <div class="col-sm-12" style="max-height: 70%;">
+          <marquee scrollamount="2" direction="up" height="70%" onmouseover="this.stop();" onmouseout="this.start();">
             <ul class="BalooThambi2" style="list-style: solid circle outside black; font-size: 17px; color: #a60707;">
               <li><img src="icons/new.gif" oncontextmenu="return false;" ondrag="return false;" onmousedown="return false;">Paper submission has commenced. <a href="papersubmission.html">Click here</a> to submit your research article now!</li>
               <li>Paper presentation can also be opted via virtual online mode for participants across globe.</li>
               <li>We are closely monitoring the CoViD-19 pandemic situation and conference updates will be put up in site regularly for author(s) and participants.</li>
-              <li>Coming soon! Invited Speakers and Keynote Speakers details!</li>
+              <li><a href="speakers.html">Check out</a> the Keynote and Invited Speakers details! More speakers coming soon for each track!</li>
               <li>Coming soon! Scopus Indexed Publication details!</li>
             </ul>
+          </marquee>
         </div>
       </div>
-      <br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br>
       <div class="col-sm-12" style="padding: 10px 20px;border: 2px solid darkgrey; border-radius: 25px;">
         <text style="font-size: 23px; color: #3A5793; font-family: 'Montserrat', sans-serif;"><b>ICFCNT - 2020</b></text><br><br>
       <text class="BalooThambi2" style="font-size: 17px;text-align:justify;"><text class="round"><b>&nbsp;&nbsp;About the Conference&nbsp;&nbsp;</b></text><br><br>

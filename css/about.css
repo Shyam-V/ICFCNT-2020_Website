@@ -10,15 +10,17 @@
 @import url('https://fonts.googleapis.com/css?family=Concert+One');
 @import url('https://fonts.googleapis.com/css?family=Gentium+Basic');
 
+
 body{
-	background-color: #3B5997;
+	background: #3B5997;
 }
 #abot{
 	padding-top:0.9%;
-	background-color: #E4E4E4;
+	background: #E4E4E4 ;
 	/*background-image: linear-gradient(315deg,#2D373B  0%,#415E9A 74%);*/
 	color: black;
 }
+
 .nopadding {
    padding: 0 ;
    margin: 0 ;
@@ -28,9 +30,20 @@ body{
 	margin: 0px 0px;
 }
 /*#3B5997*/
+.topright {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 18px;
+}
+
 .top{
 	background-color: #C4C4C4;
 	color:black;
+}
+.round{
+	border-radius: 25px;
+	border: 2px solid darkgrey;
 }
 .BalooThambi2{
 	 font-family: 'Baloo Thambi 2', cursive;
@@ -69,6 +82,37 @@ body{
 	height: 150px;
 }
 
+.button {
+  /*padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;*/
+  cursor: pointer;
+  /*outline: none;*/
+  color: #696969 !important;
+  background-color: #E4E4E4;
+  /*#4CAF50*/
+  /*border: none;*/
+  /*border-radius: 15px;*/
+  box-shadow: 1px 3px #999;
+}
+
+.button:hover {
+	background-color: #3e8e41;
+	color: black !important;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 1px 4px #666;
+  transform: translateY(2px) translateX(2px) translateZ(2px);
+}
+
+.active{
+	color: white !important;
+	background-color: #3B5997;
+	box-shadow: 1px 3px #999;
+}
+
 #important_dates{
 	font-size: 135%;
 	margin-top:10px; 
@@ -81,6 +125,9 @@ body{
 	.height-control{
 		height: 79.9%;
 	}
+	.image_padding_control{
+		padding-left: 3%;
+	}
 
 }
 @media only screen and (min-width: 1000px){
@@ -88,11 +135,14 @@ body{
 		width: 340px;
 	}
 	.height-control{
-		height: 80%;
+		height: 70%;
+	}
+	.image_padding_control{
+		padding-left: 8%;
 	}
 }
-
 a{
 	color: black;
 	background-color: transparent;
 }
+

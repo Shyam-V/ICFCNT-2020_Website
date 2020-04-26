@@ -20,6 +20,17 @@ body{
 	font-size: 1.5em;
 	font-family: 'Baloo Chettan 2';
 }
+
+.round_commitee{
+	border: 2px solid darkgrey;
+	border-radius: 25px;
+	text-align: center;
+	color: #3B5997;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-family: 'Baloo Chettan 2';
+}
+
 .logo{
 	width: auto;
 	height: auto;

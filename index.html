@@ -27,6 +27,7 @@
       <link rel="stylesheet" type="text/css" href="./css/all.css">
       <link rel="stylesheet" type="text/css" href="./css/button_animation.css">
       <link rel="stylesheet" type="text/css" href="./css/popup.css">
+      <link rel="stylesheet" type="text/css" href="./css/style1.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- <script>
@@ -99,6 +100,23 @@
   <div class="row height-control">
     <div class="col-sm-3 BalooThambi2 view-control" style="padding-right: 5px; padding-left: 5px;">
       <br>
+
+      <div class="row">
+          <div id="del-countdown">
+            <h1 style="padding-left: 0%">
+            <b>Event starts in</b>
+            </h1><br>
+            <div id="clock" style="float: center; margin-left: 12%"></div><br>
+            <div id="units" style="float: center; margin-left: 12%; margin-top: 0%">
+                <span style="margin-left: 4.5%">Days</span>
+                <span style="margin-left: 5.2%">Hours</span>
+                <span style="margin-left: 5%">Mins</span>
+                <span style="margin-left: 5.5%">Secs</span>
+            </div>
+          </div>
+          <script src='countdown.js'></script>
+      </div>
+
       <div class="row round" style="margin-left: 40px; margin-right: 50px;">
       	<h4 style="margin-left: 10px; font-size: 18.9px;"><text>&nbsp;&nbsp;<b>Publication Partner:</b>&nbsp;&nbsp;</text></h4>
       	<img src="logos\SN_logo.jpg" class="logo-control" style="margin-left: 10px;" width="215" height="27.78911" />
